@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>CS332 SU19</title>
+  </head>
+  <body class="bg">
+	<div class="containter display"><center>
+	<h3 class="display-3">University Lookup System</h3>
+	<p>CSPC332 File Structure & Database</p></center>
+	</div>
+    <div class="container bg-white">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="professor-tab" data-toggle="tab" href="#professor" role="tab" aria-controls="professor" aria-selected="true">Professor</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="student-tab" data-toggle="tab" href="#student" role="tab" aria-controls="student" aria-selected="false">Student</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  
+
+  <div class="tab-pane fade show active" id="professor" role="tabpanel" aria-labelledby="professor-tab">
+    <form action="question1.php" method="POST">
+<div class="row d-flex justify-content-center">
+<div class="col-md-6">
+<div>
+ <fieldset>
+<h4 class="sec-title">Professor Lookup</h4>
+<label for="cour">Enter a Professors SSN</label> 
+<input type="text" name="pssn" class="form-control" placeholder="Example: 111111111"/>
+	<center><input type="submit" class="btn btn-lg-20 btn-primary"></center>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Example: </strong> 111111111, 222222222, 333333333, 444444444
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+ </fieldset>
+</form></div>
+
+</div>
+<div class="col-md-6">
+<form action="question2.php" method="POST">
+<div>
+<h4 class="sec-title">Student Grade Count</h4>
+ 	<fieldset>
+		<div class="row">
+		<div class="col">
+			<label for="cour">Enter a Course Number</label>
+			<input type ="text" name = "cour" class="form-control" placeholder="Example: CS140">
+		</div>
+		<div class="col">
+			<label for="sec">Enter a Section Number</label>
+			<input type ="text" name ="sec" class="form-control" placeholder="Example: 11154">
+		</div>
+		</div>
+		<center><input type ="submit" class="btn btn-lg-20 btn-primary" value = "Submit"><center>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Example: </strong>CPSC140 & 11154, CPSC250 & 11198 or 21164, CPSC290 & 10054, ENGL127 & 20012 or 20041  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+ 	</fieldset>
+</form></div>
+</div> 
+</div>
+
+
+  </div>
+
+<div class="tab-pane fade" id="student" role="tabpane2" aria-labelledby="student-tab">
+
+    <form action="question3.php" method="POST">
+<div class="row d-flex justify-content-center">
+<div class="col-md-6">
+<div>
+ <fieldset>
+<h4 class="sec-title">Courses Sections</h4>
+<label for="cour">Enter a Course Number</label>  
+<input type="text" name="cours" class="form-control" placeholder="Example: CPSC140"/>
+	<center><input type="submit" class="btn btn-lg-20 btn-primary"></center>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Example: </strong>CPSC140, CPSC250, CPSC290, ENGL127  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+ </fieldset>
+</form></div>
+
+</div>
+<div class="col-md-6">
+<form action="question4.php" method="POST">
+<div>
+<h4 class="sec-title">Student Grade</h4>
+ 	<fieldset>
+		<div class="row">
+			<div class="col">
+			<label for="cour">Enter a CWID</label>
+			<input type ="text" name = "id" class="form-control" placeholder="Example: 302492973">
+		</div>
+		</div>
+		<center><input type ="submit" class="btn btn-lg-20 btn-primary" value = "Submit"><center>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>Example: </strong>302492973, 302543584, 302421234, 302766494, 302876432, 302857540, 302302307, 392487539  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+ 	</fieldset>
+</form></div>
+</div> 
+</div>
+
+
+  </div>
+
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+ <h4>Project By:<p> <p> Samuel Flinkfelt<p>Jesus Flores<p>Nancy Badillo</p></p></p></p></h4>
+  </div>
+	
+</div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
