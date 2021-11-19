@@ -1,0 +1,9 @@
+DROP TABLE Professor;
+DROP TABLE Course;
+DROP TABLE Prereq;
+DROP TABLE Department;
+DROP TABLE Minor;
+DROP TABLE Section;
+DROP TABLE Student;
+DROP TABLE Enroll;
+DROP TABLE collegeDeg;
